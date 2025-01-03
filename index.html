@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebSite Name</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="text-preset-5">
     <header class="header">
       <div class="header-container-container">
-        <div class="header-logo">
-          <a class="site-logo" href="">
-            <img src="./images/Logo.svg" alt="" width="192" height="36" />
-          </a>
-        </div>
-
         <div class="header-hero">
           <div class="header-hero-container container">
+            <div class="header-logo">
+              <a class="site-logo" href="">
+                <img src="./images/Logo.svg" alt="" width="192" height="36" />
+              </a>
+            </div>
             <div class="header-hero-content">
               <h1 class="header-hero-title">
                 Join the ultimate tech book club
@@ -31,21 +31,30 @@
 
               <div class="header-hero-members">
                 <img
-                  src="./images/Testimonials Container.png"
+                  src="./images/image-avatars.webp"
                   alt=""
                   width="110"
                   height="40"
                 />
               </div>
             </div>
-            <div>
+            <picture>
+              <source
+                srcset="./images/image-hero-mobile.webp"
+                media="(max-width: 375px)"
+              />
+              <source
+                srcset="./images/image-hero-tablet.webp"
+                media="(max-width: 850px)"
+              />
               <img
-                src="./images/Hero Image.png"
+                class="header-hero-image"
+                src="./images/image-hero-desktop.webp"
                 alt=""
-                width="764"
+                width="536"
                 height="606"
               />
-            </div>
+            </picture>
           </div>
         </div>
       </div>

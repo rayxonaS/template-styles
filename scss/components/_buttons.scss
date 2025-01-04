@@ -1,0 +1,24 @@
+.btn {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-text {
+  display: flex;
+}
+
+.btn-text::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: inline-block;
+  margin-left: 1.6rem;
+}

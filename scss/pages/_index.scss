@@ -1,0 +1,147 @@
+.hero {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.hero-image {
+  border-radius: 12px;
+  height: auto;
+  width: 100%;
+}
+.hero-paragraph {
+}
+.hero-text {
+  color: $neutral-900;
+  font-weight: 600;
+  margin-bottom: 3.4rem;
+}
+
+.hero-context {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.hero-checks {
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.hero-cheks-btn {
+  margin-bottom: 2.4rem;
+}
+
+.hero-content {
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.hero-description {
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-text {
+    font-size: 3.4rem;
+  }
+}
+
+.features {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.features-container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.features-paragraph {
+}
+.features-text {
+  color: $neutral-900;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.highlight {
+}
+.features-content {
+  color: $neutral-700;
+  font-weight: 400;
+  width: 100%;
+  max-width: 530px;
+}
+
+.bold {
+  color: $neutral-700;
+  font-weight: 600;
+}
+.features-image {
+  border-radius: 12px;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .features-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features-text {
+    font-size: 3.4rem;
+  }
+}
+
+.concept {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.concept-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 970px;
+}
+
+.concept-stars {
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.concept-text {
+  color: $neutral-900;
+  font-weight: 600;
+  text-align: center;
+}
+.concept-content {
+  color: $neutral-700;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .concept-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept-text {
+    font-size: 3.4rem;
+  }
+}

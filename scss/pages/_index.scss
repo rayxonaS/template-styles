@@ -35,6 +35,16 @@
   margin-bottom: 2.4rem;
 }
 
+.hero-checks {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-cheks-btn {
+  display: inline-block;
+  margin: 0;
+}
+
 .hero-content {
   flex-direction: column;
   gap: 2.4rem;
@@ -92,6 +102,24 @@
   width: 100%;
 }
 
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  border: 2px solid orange;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 @media screen and (max-width: 850px) {
   .features-container {
     flex-direction: column;
@@ -101,6 +129,62 @@
 @media screen and (max-width: 500px) {
   .features-text {
     font-size: 3.4rem;
+  }
+}
+
+.journey {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-image: url(../images/pattern-light-bg.svg),
+    url(../images/pattern-glow.svg);
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right -214px;
+}
+.journey-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.journey-text {
+  font-weight: 600;
+  text-align: center;
+  color: $neutral-900;
+  margin-bottom: 5rem;
+}
+.journey-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+
+.journey-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.journey-image {
+  margin-bottom: 2rem;
+}
+
+.journey-content {
+  font-weight: 600;
+  color: $neutral-900;
+}
+
+@media screen and (max-width: 850px) {
+  .journey {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .journey {
+    display: none;
   }
 }
 
@@ -143,5 +227,151 @@
 @media screen and (max-width: 500px) {
   .concept-text {
     font-size: 3.4rem;
+  }
+}
+
+.options {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.options-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 970px;
+}
+
+.options-content {
+  font-weight: var(--main-fw);
+  color: $neutral-900;
+  align-items: center;
+}
+.options-descriptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+.options-paragraph {
+  border: 1px solid $neutral-200;
+  border-radius: 8px;
+  width: 286px;
+  height: 385px;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.options-paragraph-bold {
+  width: 350px;
+  height: 390px;
+  border: 1px solid $neutral-200;
+  border-radius: 8px;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  background-image: url(../images/pattern-light-bg.svg),
+    url(../images/pattern-glow.svg);
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right -214px;
+}
+.option-text {
+  font-weight: 600;
+  padding-top: 2.4rem;
+  color: $neutral-900;
+}
+.option-decsription {
+  font-weight: 400;
+  color: $neutral-700;
+  padding-top: 2.4rem;
+}
+
+.bold {
+  font-weight: 600;
+  color: $neutral-900;
+}
+.options-list {
+  padding-top: 4.9rem;
+}
+.options-list-item {
+  display: flex;
+  align-items: center;
+}
+.options-logo {
+  margin-right: 1rem;
+  margin-bottom: 1.8rem;
+}
+.options-item {
+  font-weight: 400;
+  color: $neutral-700;
+  margin-bottom: 2rem;
+}
+
+.options-btn-text {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  color: $neutral-900;
+  background-color: $light-salmon-50;
+  border-color: $neutral-900;
+  display: inline-flex;
+  gap: 1.6rem;
+  align-items: center;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 238px;
+  height: 63px;
+  text-align: center;
+}
+
+.option-btn-text {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  color: $neutral-900;
+  background-color: $light-salmon-50;
+  border-color: $neutral-900;
+  display: inline-flex;
+  gap: 1.6rem;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  max-width: 302px;
+  height: 63px;
+}
+
+.options-btn {
+  width: 100%;
+  max-width: 238px;
+  height: 63px;
+}
+
+.options-btn-text:hover {
+  background-color: $light-salmon-500;
+}
+
+.option-btn {
+  width: 100%;
+  max-width: 302px;
+  height: 63px;
+}
+
+.option-btn-text:hover {
+  background-color: $light-salmon-500;
+}
+
+.bold-text {
+  font-weight: 600;
+  color: $neutral-900;
+}
+
+@media screen and (max-width: 850px) {
+  .options-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .options-container {
+    flex-direction: column;
   }
 }

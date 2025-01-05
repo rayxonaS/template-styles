@@ -9,8 +9,6 @@
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
 }
-.header-logo-container {
-}
 
 .header-hero {
   padding-top: 4.8rem;
@@ -20,8 +18,7 @@
   align-items: center;
   gap: 6.4rem;
 }
-.header-hero-content {
-}
+
 .header-hero-title {
   margin-bottom: 2.4rem;
   background: linear-gradient(107.24deg, #fea36f -11.37%, #062630 61.84%);
@@ -52,8 +49,7 @@
 .header-hero-btn:hover {
   background-color: $light-salmon-500;
 }
-.btn-text {
-}
+
 .header-hero-members {
   display: flex;
   gap: 1.2rem;
@@ -67,8 +63,7 @@
   display: flex;
   margin-bottom: 4px;
 }
-.header-hero-members-stars-btn {
-}
+
 .header-hero-image {
   height: auto;
   width: 100%;
